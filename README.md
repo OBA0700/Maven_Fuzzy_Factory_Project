@@ -1,4 +1,4 @@
-# MAVEN FUZZY FACTORY WEBSITE/SALES PERFORMANCE PROJECT
+## MAVEN FUZZY FACTORY WEBSITE/SALES PERFORMANCE PROJECT
 ### About the Dataset:
 The dataset Maven Fuzzy Factory, an E-Commerce company, was designed and structured with the Advanced SQL: MySQL Data Analysis & Business Intelligence Course by Maven Analytics to aid students practice on SQL skills with a project.
 ### Data Bias: 
