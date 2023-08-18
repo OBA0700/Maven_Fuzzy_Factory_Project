@@ -15,8 +15,8 @@ GROUP BY YEAR(website_sessions.created_at),
          QUARTER(website_sessions.created_at);
 /*
 RESULT:         
-Year    Quarter    Sessions     Orders 
-2012	1	       1879	        60
+Year    Quarter        Sessions     Orders 
+2012	1	       1879	    60
 2012	2	       11433	    347
 2012	3	       16892	    684
 2012	4	       32266	    1495
@@ -95,18 +95,18 @@ GROUP BY YEAR(website_sessions.created_at),
 /*
 RESULT:         
 Year    Quarter     Gsearch_nonbrand     Bsearch_nonbrand     Brand_search     Organic_search     Direct_type_in
-2012	1	        60	                 0	                  0	               0	              0
+2012	1	        60	             0	                  0	           0	              0
 2012	2	        291  	             0	                  20	           15	              21
-2012	3	        482	                 82	                  48	           40	              32
-2012	4	        913	                 311	              88	           94	              89
-2013	1	        766	                 183	              108	           125	              91
-2013	2	        1114	             237	              114	           134	              119
-2013	3	        1132	             245	              153	           167	              143
-2013	4	        1657	             291	              248	           223	              197
-2014	1	        1667	             344	              354	           338	              311
-2014	2	        2208	             427	              410	           445	              402
-2014	3	        2259	             434	              432	           445	              402
-2014	4	        3248	             683	              615	           605	              532
+2012	3	        482	             82	                  48	           40	              32
+2012	4	        913	             311	          88	           94	              89
+2013	1	        766	             183	          108	           125	              91
+2013	2	        1114	             237	          114	           134	              119
+2013	3	        1132	             245	          153	           167	              143
+2013	4	        1657	             291	          248	           223	              197
+2014	1	        1667	             344	          354	           338	              311
+2014	2	        2208	             427	          410	           445	              402
+2014	3	        2259	             434	          432	           445	              402
+2014	4	        3248	             683	          615	           605	              532
 */         
          
          
@@ -135,8 +135,8 @@ GROUP BY YEAR(website_sessions.created_at),
 /*
 RESULT:
 Year    Quarter    Gsearch_nonbrand_Convr_rate    Bsearch_nonbrand_Convr_rate     Brand_Search_Convr_rate     Organic_search_Convr_rate     Direct_type_in_Convr_rate
-2012	1	       0.0324		                  NULL                            0.0000	                  0.0000	                    0.0000
-2012	2	       0.0284		                  NULL                            0.0526	                  0.0359	                    0.0536
+2012	1	       0.0324		              NULL                            0.0000	                  0.0000	                    0.0000
+2012	2	       0.0284		              NULL                            0.0526	                  0.0359	                    0.0536
 2012	3	       0.0384	                      0.0408	                      0.0602	                  0.0498	                    0.0443
 2012	4	       0.0436	                      0.0497	                      0.0531	                  0.0539	                    0.0537
 2013	1	       0.0612	                      0.0693	                      0.0703	                  0.0753	                    0.0614
@@ -200,14 +200,14 @@ GROUP BY 1;
 /*
 RESULT:
 Landing_page   Total_session   Total_revenue   Convr_rt
-/home	       2261	           72	           0.0318
-/lander-1	   2316	           94	           0.0406
+/home	       2261	       72	       0.0318
+/lander-1      2316	       94	       0.0406
 
 
 home     = .0319
 lander-1 = .0406
 Incremental Value = .0406-0.0319 
-				  = .0087 (Lift_Rate)
+	          = .0087 (Lift_Rate)
 */
 
 /*NEXT: Determine the Incremental Order(New_page_sessions X Incremental_value) by:
@@ -249,7 +249,7 @@ New_page_sessions
 
 Incremental Order = new_page_sessions X incremental_value
                    = 22,972 X .0087
-				   = 200 
+		   = 200 
 */
 
 
@@ -332,9 +332,9 @@ FROM session_level_made_it
 GROUP BY 1;
 /*
 RESULT:
-Segment       Sessions   Products_click_rate   Mr_fuzzy_click_rate   Cart_click_rate   Shipping_click   Billing_click_rate   To_thank_you
-seen_home	  2261	     0.4166	               0.7261	             0.4327	           0.6757	        0.8400	             0.4286
-seen_lander	  2316	     0.4676	               0.7128	             0.4508	           0.6638	        0.8528	             0.4772
+Segment         Sessions   Products_click_rate    Mr_fuzzy_click_rate    Cart_click_rate    Shipping_click    Billing_click_rate    To_thank_you
+seen_home	2261	   0.4166	          0.7261	         0.4327	            0.6757	      0.8400	            0.4286
+seen_lander	2316	   0.4676	          0.7128	         0.4508	            0.6638	      0.8528	            0.4772
 /*
 -- NOTE: it is evident that, in the case of "products_click_rate" down to the "to_thank_you"(placed orders) rate, the newly introduced '/lander-1' page converts better than the initial '/home' landing page.
 
@@ -377,7 +377,7 @@ RESULT:
 Year    Total_sales   Total_revenue   Margin
 2012	2586	      129274.14	      78873.00
 2013	7447	      393247.87	      241596.50
-2014	16860	      1075612.19	  679722.50
+2014	16860	      1075612.19      679722.50
 */
 
 
@@ -428,7 +428,7 @@ FROM Product_vs_Next_page
 GROUP BY 1, 2;
 /*
 RESULT:
-Year    Month    Sessions_to_Products    Clicked_tru_products   Clicked_tru_products_rate   Orders_from_products   Orders_from_products_rate
+Year    Month        Sessions_to_Products        Clicked_tru_products   Clicked_tru_products_rate   Orders_from_products   Orders_from_products_rate
 2012	3	     743	                 530	                0.7133	                    60	                   0.0808
 2012	4	     1447	                 1029	                0.7111	                    99	                   0.0684
 2012	5	     1584	                 1135	                0.7165	                    108	                   0.0682
@@ -495,11 +495,11 @@ GROUP BY 1
 ORDER BY 1;
 /*
 RESULT:
-primary_product_id   X_Sell_Product1   X_Sell_Product2   X_Sell_Product3   X_Sell_Product4   X_Sell_Product1_rate   X_Sell_Product2_rate   X_Sell_Product3_rate   X_Sell_Product4_rate
-1	                 0	               238	             553	           933	             0.0000	                0.0533	               0.1238	              0.2089
-2	                 25	               0	             40	               260	             0.0196	                0.0000	               0.0313	              0.2036
-3	                 84	               40	             0	               208	             0.0904	                0.0431	               0.0000	              0.2239
-4	                 16	               9	             22	               0	             0.0275	                0.0155	               0.0379	              0.0000
+primary_product_id       X_Sell_Product1       X_Sell_Product2     X_Sell_Product3     X_Sell_Product4       X_Sell_Product1_rate     X_Sell_Product2_rate     X_Sell_Product3_rate   X_Sell_Product4_rate
+1	                 0	               238	           553	               933	             0.0000	              0.0533	               0.1238	              0.2089
+2	                 25	               0	           40	               260	             0.0196	              0.0000	               0.0313	              0.2036
+3	                 84	               40	           0	               208	             0.0904	              0.0431	               0.0000	              0.2239
+4	                 16	               9	           22	               0	             0.0275	              0.0155	               0.0379	              0.0000
 */
 
 
