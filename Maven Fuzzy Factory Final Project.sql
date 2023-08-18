@@ -52,7 +52,7 @@ GROUP BY YEAR(website_sessions.created_at),
          QUARTER(website_sessions.created_at);
 /*
 RESULT:         
-Year    Quarter    Sess_to_Order_Convr_rate    Revenue_per_Order    Revenue_per_Session
+Year    Quarter        Sess_to_Order_Convr_rate    Revenue_per_Order    Revenue_per_Session
 2012	1	       0.0319	                   49.990000	        1.596275
 2012	2	       0.0304	                   49.990000	        1.517233
 2012	3	       0.0405	                   49.990000	        2.024222
@@ -94,7 +94,7 @@ GROUP BY YEAR(website_sessions.created_at),
 		 QUARTER(website_sessions.created_at);
 /*
 RESULT:         
-Year    Quarter     Gsearch_nonbrand     Bsearch_nonbrand     Brand_search     Organic_search     Direct_type_in
+Year    Quarter         Gsearch_nonbrand     Bsearch_nonbrand     Brand_search     Organic_search     Direct_type_in
 2012	1	        60	             0	                  0	           0	              0
 2012	2	        291  	             0	                  20	           15	              21
 2012	3	        482	             82	                  48	           40	              32
@@ -134,7 +134,7 @@ GROUP BY YEAR(website_sessions.created_at),
 		 QUARTER(website_sessions.created_at);
 /*
 RESULT:
-Year    Quarter    Gsearch_nonbrand_Convr_rate    Bsearch_nonbrand_Convr_rate     Brand_Search_Convr_rate     Organic_search_Convr_rate     Direct_type_in_Convr_rate
+Year    Quarter        Gsearch_nonbrand_Convr_rate    Bsearch_nonbrand_Convr_rate     Brand_Search_Convr_rate     Organic_search_Convr_rate     Direct_type_in_Convr_rate
 2012	1	       0.0324		              NULL                            0.0000	                  0.0000	                    0.0000
 2012	2	       0.0284		              NULL                            0.0526	                  0.0359	                    0.0536
 2012	3	       0.0384	                      0.0408	                      0.0602	                  0.0498	                    0.0443
