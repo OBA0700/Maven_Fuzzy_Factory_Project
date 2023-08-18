@@ -36,7 +36,7 @@ YEAR, MONTH, QUARTER, MIN(DATE)
 - The Aggregate Functions:
 COUNT, COUNT(DISTINCT), SUM, MIN, MAX
 
-- The Conditional Statement
+- The Conditional Statement:
 CASE
 
 - The Operator Function:
