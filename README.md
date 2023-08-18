@@ -22,9 +22,9 @@ The Company been launched on march 2012 has been operational for three years wit
 4. The Hudson River Mini bear
 
 ### Business Task:
-i. Analyze and optimize marketing channels.
-ii. Measure and Test the website Conversion performance.
-iii. Use the data to Understand the impact of new product launches.
+- Analyze and optimize marketing channels.
+- Measure and Test the website Conversion performance.
+- Use the data to Understand the impact of new product launches.
 
 ### Environment Command Functions:
 - The "Big 6" Statements and Clauses:
