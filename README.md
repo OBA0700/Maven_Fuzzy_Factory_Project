@@ -49,3 +49,7 @@ LEFT JOIN
 - Extract and Analyze traffic and website performance data to craft a growth story that can enhance the company's success and development.
 - Dive into the marketing channel activities and figure out the website improvements that have contributed to the company's success to date;
 flexing some analytical skills for the investors while at it.
+
+## REPORT(Visualization)
+
+[Maven Fuzzy Factory Project Report.pbit.pdf](https://github.com/OBA0700/Maven_Fuzzy_Factory_Project/files/12486110/Maven.Fuzzy.Factory.Project.Report.pbit.pdf)
